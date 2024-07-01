@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Pedidos Bartolomeo</title>
+    <link rel="stylesheet" href="style/style2.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id = "migas_pedidos">
+            1. Pedido
+        </div>
+        <div id = "migas_revision">
+            2. Revisión y Pago
+        </div>
+        <div id = "migas_estado">
+            3. Estado
+        </div>
+    </header>
+    <section id="sect_pedidos">
+        <div id="1" class="producto"><h3>Bartolomeo Benedict - 18.95€</h3>
+            <img class="imagen_producto" src="images/desayuno1.jpg" alt="Bartolomeo Benedict">
+            <button class="botones 1 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 1 menos"><span class="front">-</span></button>
+        </div>
+        <div id="2" class="producto"><h3>Burrata - 16.50€</h3>
+            <img class="imagen_producto" src="images/entrante1.jpg" alt="Burrata">
+            <button class="botones 2 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 2 menos"><span class="front">-</span></button>
+        </div>
+        <div id="3" class="producto"><h3>Carpaccio di Salmone - 18.50</h3>
+            <img class="imagen_producto" src="images/entrante2.jpg" alt="Carpaccio di Salmone">
+            <button class="botones 3 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 3 menos"><span class="front">-</span></button>
+        </div>
+        <div id="4" class="producto"><h3>Tequeños - 10.00€</h3>
+            <img class="imagen_producto" src="images/entrante3.jpg" alt="Tequeños">
+            <button class="botones 4 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 4 menos"><span class="front">-</span></button>
+        </div>
+        <div id="5" class="producto"><h3>Mortadella e Pistacchio - 16.50€</h3>
+            <img class="imagen_producto" src="images/pizza1.jpg" alt="Mortadella e Pistacchio">
+            <button class="botones 5 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 5 menos"><span class="front">-</span></button>
+        </div>
+        <div id="6" class="producto"><h3>Shakshouka - 15.00€</h3>
+            <img class="imagen_producto" src="images/pizza2.jpg" alt="Shakshouka">
+            <button class="botones 6 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 6 menos"><span class="front">-</span></button>
+        </div>
+        <div id="7" class="producto"><h3>Fichi e Prosciutto - 15.50€</h3>
+            <img class="imagen_producto" src="images/pizza3.jpg" alt="Fichi e Prosciutto">
+            <button class="botones 7 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 7 menos"><span class="front">-</span></button>
+        </div>
+        <div id="8" class="producto"><h3>Pasta al Pesto di Salvia - 17.00€</h3>
+            <img class="imagen_producto" src="images/pasta1.jpg" alt="Pasta al Pesto di Salvia">
+            <button class="botones 8 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 8 menos"><span class="front">-</span></button>
+        </div>
+        <div id="9" class="producto"><h3>Spaghetti Vongole al Cartoccio - 20.00€</h3>
+            <img class="imagen_producto" src="images/pasta2.jpg" alt="Spaghetti Vongole al Cartoccio">
+            <button class="botones 9 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 9 menos"><span class="front">-</span></button>
+        </div>
+        <div id="10" class="producto"><h3>Fettuccine nero ai Frutti di Mare - 20.00€</h3>
+            <img class="imagen_producto" src="images/pasta3.jpg" alt="Fettuccine nero ai Frutti di Mare">
+            <button class="botones 10 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 10 menos"><span class="front">-</span></button>
+        </div>
+        <div id="11" class="producto"><h3>Ossobuco & Gnocchi de Plátano - 22.00€</h3>
+            <img class="imagen_producto" src="images/fusion1.jpg" alt="Ossobuco in Gremolata & Gnocchi de Plátano Macho">
+            <button class="botones 11 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 11 menos"><span class="front">-</span></button>
+        </div>
+        <div id="12" class="producto"><h3>Risotto Criollo - 18.00€</h3>
+            <img class="imagen_producto" src="images/fusion2.jpg" alt="Risotto Criollo">
+            <button class="botones 12 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 12 menos"><span class="front">-</span></button>
+        </div>
+        <div id="13" class="producto recolocar"><h3>Crostata de Pollo - 19.00€</h3>
+            <img class="imagen_producto" src="images/fusion3.jpg" alt="Crostata de Pollo">
+            <button class="botones 13 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 13 menos"><span class="front">-</span></button>
+        </div>
+        <div id="14" class="producto"><h3>Tiramisu - 6.00€</h3>
+            <img class="imagen_producto" src="images/postre1.jpg" alt="Tiramisu">
+            <button class="botones 14 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 14 menos"><span class="front">-</span></button>
+        </div>
+        <div id="15" class="producto"><h3>Bartolomeo Cheesecake - 6.90€</h3>
+            <img class="imagen_producto" src="images/postre2.jpg" alt="Bartolomeo Cheesecake">
+            <button class="botones 15 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 15 menos"><span class="front">-</span></button>
+        </div>
+        <div id="16" class="producto"><h3>Tarta de Queso Criolla - 7.70€</h3>
+            <img class="imagen_producto" src="images/postre3.jpg" alt="Tarta de Queso Criolla">
+            <button class="botones 16 mas"><span class="front">+</span></button>
+            <h4>X</h4>
+            <button class="botones 16 menos"><span class="front">-</span></button>
+        </div>
+        <input type="button" class="siguiente" value="Siguiente">
+    </section>
+    <section id="sect_revision">
+        <div id="cuadro_revision">
+            <h2 id="titulo_revision">Resumen del pedido</h2>
+            <div id="caja_pedidos">
+                <div class="ud_prod" id="p_1"><h2 class="nombre_prod">Bartolomeo Benedict              </h2><h2 class="precio">18.95€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_2"><h2 class="nombre_prod">Burrata                          </h2><h2 class="precio">16.50€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_3"><h2 class="nombre_prod">Carpaccio di Salmone             </h2><h2 class="precio">18.50€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_4"><h2 class="nombre_prod">Tequeños                         </h2><h2 class="precio">10.00€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>              
+                <div class="ud_prod" id="p_5"><h2 class="nombre_prod">Mortadella e Pistacchio          </h2><h2 class="precio">16.50€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_6"><h2 class="nombre_prod">Shakshouka                       </h2><h2 class="precio">15.00€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_7"><h2 class="nombre_prod">Fichi e Prosciutto               </h2><h2 class="precio">15.50€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_8"><h2 class="nombre_prod">Pasta al Pesto di Salvia         </h2><h2 class="precio">17.00€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_9"><h2 class="nombre_prod">Spaghetti Vongole al Cartoccio   </h2><h2 class="precio">20.00€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_10"><h2 class="nombre_prod">Fettuccine nero ai Frutti di Mare</h2><h2 class="precio">20.00€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_11"><h2 class="nombre_prod">Ossobuco & Gnocchi de Plátano    </h2><h2 class="precio">22.00€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_12"><h2 class="nombre_prod">Risotto Criollo                  </h2><h2 class="precio">18.00€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_13"><h2 class="nombre_prod">Crostata de Pollo                </h2><h2 class="precio">19.00€</h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_14"><h2 class="nombre_prod">Tiramisu                         </h2><h2 class="precio">6.00€ </h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_15"><h2 class="nombre_prod">Bartolomeo Cheesecake            </h2><h2 class="precio">6.90€ </h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+                <div class="ud_prod" id="p_16"><h2 class="nombre_prod">Tarta de Queso Criolla           </h2><h2 class="precio">7.70€ </h2><h2 class="cantidad">xN</h2><h2 class="suma">XX.XX€</h2></div>
+            <h2 id="total">Total a pagar: XX.XX€</h2>
+            </div>
+            <div id="cuadro_pago">
+                <h2>Pago</h2>
+                <form>
+                    <input type="text" class="input_pago" id = "titular" name="titular" placeholder="Titular">
+                    <input type="text" class="input_pago" id = "n_tarjeta" name="n_tarjeta" placeholder="Nº de tarjeta">
+                    <input type="text" class="input_pago" id = "fecha" name="fecha" placeholder="Fecha de vencimiento">
+                    <input type="text" class="input_pago" id = "cvv" name="cvv" placeholder="CVV">
+                    <div id="cuadro_botones_pago">
+                        <input type="button" class="boton_pago siguiente" id="pagar" value="Pagar">
+                        <input class="boton_pago" type="reset" value="Limpiar">
+                    </div>
+                </form> 
+            </div>
+        </div>
+        
+    </section>
+    <section id="sect_estado">
+        <span class="loader"></span>
+        <h1 id = "contador">10:00</h1>
+        <img id="img_check_contador" src="images/check_contador.png" alt="Check">
+    </section>
+    <script src = "script/script_migas.js"></script>
+</body>

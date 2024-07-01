@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Bartolomeo</title>
+    <link rel="stylesheet" href="style/style1.css">
+    <meta charset="UTF-8">
+    
+</head>
+
+<body>
+    <!--La cabecerá ocupará 4 columnas para el caso de escritorio y
+    5 columnas para el caso de la tablet, contendrá tanto el logo como el video-->
+    <header class="col-4">
+        <img id="logo" src="images/logo.jpg" alt="logo">
+        <video src="images/video_bartolomeo.mp4" autoplay muted controls></video>
+        <div class="dropdown">
+          <p1>Menu</p1>
+          <div class="dropdown-content">
+          <a href="#desayunos-y-entrantes">Desayunos y Entrantes</a>
+          <a href="#pizzas-y-pastas">Pizzas y Pastas</a>
+          <a href="#fusion-y-postres">Cocina Fusión y Postres</a>
+          <a href="#registro-de-usuarios">Registro de Usuarios</a>
+          <a href="migas_de_pan.html">Menú del Restaurante</a>
+          <a href="#informacion-de-contacto">Información de Contacto</a>
+          </div>
+        </div>
+    </header>
+    <!--Los botones de navegación ocuparán 8 columnas para el escritorio y 
+    7 para el caso de la tablet. Nav contendrá cada uno de los botones con hipervínculos-->
+    <nav class = "col-8 color_fondo">
+        <a href="#pizzas-y-pastas">
+          <nav class="naveg">
+              Pizzas y Pastas
+          </nav>
+        </a>
+        <a href="#desayunos-y-entrantes">
+            <nav class="naveg">
+                Desayunos y Entrantes
+            </nav>
+        </a>
+        <a href="#registro-de-usuarios">
+          <nav class="naveg">
+              Registro de Usuarios
+          </nav>
+        </a>
+        <a href="#fusion-y-postres">
+            <nav class="naveg">
+                Cocina Fusión y Postres
+            </nav>
+        </a>
+        <a href="#informacion-de-contacto">
+            <nav class="naveg">
+                Información de Contacto
+            </nav>
+        </a>
+        <a href="migas_de_pan.html">
+            <nav class="naveg">
+                Menu del Restaurante
+            </nav>
+        </a>
+    </nav>
+    <!--Cada una de las páginas ocuparán las 12 columnas tanto para el formato de 
+    escritorio como el de tablet. Cada página contiene un artículo, un título y una galería-->
+    <section class="col-12 col-t-12 pagina color_impar altura_movil" id="desayunos-y-entrantes">
+        <!--El título se colocará a la derecha para las páginas impares y a la izquierda
+        en las páginas pares. este título ocupa 4 columnas en el formato escritorio y 
+        12 columnas para el caso del modo tablet-->
+        <h2 class="col-4 col-t-12 right">DESAYUNOS Y ENTRANTES</h2>
+        <!--El artículo está formado por parrafos y títulos. Cada artículo ocupa 8 columnas en el
+        formato escritorio y 12 en el formato tablet-->
+        <article class="col-8 col-t-12 left">
+            <h3>DESAYUNOS</h3>
+            <h3>Bartolomeo Benedict</h3>
+            <p> Huevo poché servido en focaccia artesanal, con salmón 
+                ahumado, aguacate y salsa Bearnesa. </p>
+            <h3>Penntucky Breakfast</h3>
+            <p>Inspirado en el Soul Food Americano. Un esponjoso 
+                waffle preparado al momento acompañado de pollo frito, 
+                pancetta, huevo a la plancha y sirope de maple.</p>
+            <h3>Cachapas</h3>
+            <p>Dos tortitas de maíz asadas al momento, servidas con 
+                mantequilla, queso latino a la plancha y aguacate. </p>
+            <br>
+            <h3>ENTRANTES</h3>
+            <h3>Burrata</h3>
+            <p>
+                Burrata cremosa de 250g servida sobre lecho de miel, tomates 
+secos, tomatitos cherry, aceitunas negras, aderezo de trufa y 
+jeringa de pesto. 16,50€
+            </p>
+            <h3>Carpaccio di Salmone</h3>
+            <p>
+                Láminas de salmón ahumado, servido con alcaparras baby, pickle 
+de cebolla morada, huevo cocido rallado y AOVE. 18,50€
+            </p>
+            <h3>Tequeños</h3>
+            <p>
+                Nuestros tequeños artesanos, elaborados en casa. Crujientes dedos de 
+masa rellenos de queso latino, acompañados de mermelada picante 
+de guayaba. 10,00€
+            </p>
+
+        </article>
+        <!--Para la galería de imágenes utilzamos una sección que ocupa 4 columnas en el 
+        caso del escritorio y 12 en el caso del formato tablet-->
+        <section class="col-4">
+            <div class="container">
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img class="imagen_galeria" src="images/desayuno1.jpg">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img class="imagen_galeria" src="images/desayuno2.jpg">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img class="imagen_galeria" src="images/desayuno3.jpg">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img class="imagen_galeria" src="images/entrante1.jpg">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img class="imagen_galeria" src="images/entrante2.jpg">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img class="imagen_galeria" src="images/entrante3.jpg">
+              </div>
+                
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            
+              <div class="caption-container">
+              </div>
+            
+              <div class="row">
+                <div class="column">
+                  <img class="img_small1 cursor" src="images/desayuno1.jpg" onclick="currentSlide(1)" alt="Bartolomeo Benedict">
+                </div>
+                <div class="column">
+                  <img class="img_small2 cursor" src="images/desayuno2.jpg" onclick="currentSlide(2)" alt="Penntucky Breakfast">
+                </div>
+                <div class="column">
+                  <img class="img_small3 cursor" src="images/desayuno3.jpg" onclick="currentSlide(3)" alt="Cachapas">
+                </div>
+                <div class="column">
+                  <img class="img_small4 cursor" src="images/entrante1.jpg" onclick="currentSlide(4)" alt="Burrata">
+                </div>
+                <div class="column">
+                  <img class="img_small5 cursor" src="images/entrante2.jpg" onclick="currentSlide(5)" alt="Carpaccio di Salmone">
+                </div>    
+                <div class="column">
+                  <img class="img_small6 cursor" src="images/entrante3.jpg" onclick="currentSlide(6)" alt="Tequeños">
+                </div>
+              </div>
+            </div>
+            </section>
+    </section>
+
+
+    <section class="col-12 col-t-12 pagina color_par altura_movil" id="pizzas-y-pastas">  
+        <h2 class="col-4 col-t-12 left">PIZZAS Y<br>PASTAS</h2>
+        <article class="col-8 col-t-12 right">
+            <h3>PIZZAS</h3>
+            <h3>Mortadella e Pistacchio</h3>
+            <p>Crema di Parmigiano, mozzarella, mortadella con pistacchio y 
+                “pesto fatto in casa” de salvia e pistacchio. 16,50€
+                </p>
+            <h3>Shakshouka</h3>
+            <p>Salsa pomodoro con sofrito de cebolla, ajo y sriracha,
+                mozzarella, tomates cherry, berenjenas asadas, salsiccia italiana 
+               casera, huevo a la plancha, y un toque de cilantro. 15,00€
+               *{Opción Vegetariana sin salsiccia Italiana} </p>
+            <h3>Fichi e Prosciutto</h3>
+            <p>Pesto Modenese al romero, higos turcos secos marinados en 
+                vino de Oporto y aceto balsámico, mozzarella, prosciutto 
+                y escamas de Parmigiano. 15,50€ </p>
+            <br>
+            <h3>PASTAS</h3>
+            <h3>Pasta al Pesto di Salvia</h3>
+            <p>Pasta servida con nuestro “pesto fatto in casa”.
+              Elaborado con salvia, queso fresco de cabra, perejil, pistacho 
+              y Parmigiano DOP. 17,00 </p>
+            <h3>Spaghetti Vongole al Cartoccio</h3>
+            <p>Spaghetti salteados con almejas, un toque de ajo, vino blanco, 
+              limón y perejil. Servidos en papillote. 20,00 </p>
+            <h3>Fettuccine nero ai Frutti di Mare</h3>
+            <p>Fetuccine al negro de sepia, servidos con gambones y luras, 
+                salteados con ajo negro y vino blanco, tomatitos cherry, salsa 
+                pomodoro, albahaca y un toque de Sriracha. 20,00€ </p>
+        </article>
+        <section class="col-4">
+            <div class="container">
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img class="imagen_galeria" src="images/pizza1.jpg">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img class="imagen_galeria" src="images/pizza2.jpg">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img class="imagen_galeria" src="images/pizza3.jpg">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img class="imagen_galeria" src="images/pasta1.jpg">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img class="imagen_galeria" src="images/pasta2.jpg">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img class="imagen_galeria" src="images/pasta3.jpg">
+              </div>
+                
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            
+              <div class="caption-container">
+              </div>
+            
+              <div class="row">
+                <div class="column">
+                  <img class="img_small1 cursor" src="images/pizza1.jpg" onclick="currentSlide(1)" alt="Mortadella e Pistacchio">
+                </div>
+                <div class="column">
+                  <img class="img_small2 cursor" src="images/pizza2.jpg" onclick="currentSlide(2)" alt="Shakshouka">
+                </div>
+                <div class="column">
+                  <img class="img_small3 cursor" src="images/pizza3.jpg" onclick="currentSlide(3)" alt="Fichi e Prosciutto">
+                </div>
+                <div class="column">
+                  <img class="img_small4 cursor" src="images/pasta1.jpg" onclick="currentSlide(4)" alt="Pasta al Pesto di Salvia">
+                </div>
+                <div class="column">
+                  <img class="img_small5 cursor" src="images/pasta2.jpg" onclick="currentSlide(5)" alt="Spaghetti Vongole al Cartoccio">
+                </div>    
+                <div class="column">
+                  <img class="img_small6 cursor" src="images/pasta3.jpg" onclick="currentSlide(6)" alt="Fettuccine nero ai Frutti di Mare">
+                </div>
+              </div>
+            </div>
+            </section>
+    </section>
+
+
+    <section class="col-12 col-t-12 pagina color_impar altura_movil" id="fusion-y-postres">
+        <h2 class="col-4 col-t-12 right">COCINA FUSION Y POSTRES</h2>
+        <article class="col-8 col-t-12 left">
+            <h3>COCINA FUSION</h3>
+            <h3>Ossobuco in Gremolata & Gnocchi de Plátano Macho</h3>
+            <p>Nuestros gnocchi artesanales de plátano macho y queso latino, 
+                servidos con ossobuco de ternera al vino, cocido lentamente 
+                durante 8 horas según la tradición milanesa, coronado con una 
+                aromática gremolata de perejil y ralladura de limón. 22,00€</p>
+            <h3>Risotto Criollo</h3>
+            <p> Nuestra Chef incorpora al clásico risotto, su receta tradicional 
+                de Asado Negro de redondo de ternera al vino de Oporto y lo 
+                combina con Parmigiano y queso Taleggio DOP. 18,00€</p>
+            <h3>Crostata de Pollo</h3>
+            <p>Pastel de masa quebrada, rellena de guiso de pollo al vino, 
+                con aceitunas verdes, alcaparras y aroma de ají dulce. 19.00€ </p> 
+            <br>
+            <h3>POSTRES</h3>
+            <h3>Tiramisu</h3>
+            <p>Nuestro clásico tiramisú con crema de zabaglione y mascarpone 
+                aromatizada con Ron. 6,50€</p>
+            <h3>Bartolomeo Cheesecake</h3>
+            <p>Nuestra tarta de queso de Autor, estilo Nueva York. 
+                Con base de galletas Lotus y acompañada de mermelada de 
+                plátano macho. 6,90€</p>
+            <h3>Tarta de Queso Criolla</h3>
+            <p> Una suave y dorada tarta de queso, postre tradicional de la 
+              cocina Venezolana a base de queso Gouda y queso latino, 
+              acompañada de mermelada casera de guayaba. 7,70</p>
+        </article>
+        <section class="col-4">
+            <div class="container">
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img class="imagen_galeria" src="images/fusion1.jpg">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img class="imagen_galeria" src="images/fusion2.jpg">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img class="imagen_galeria" src="images/fusion3.jpg">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img class="imagen_galeria" src="images/postre1.jpg">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img class="imagen_galeria" src="images/postre2.jpg">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img class="imagen_galeria" src="images/postre3.jpg">
+              </div>
+                
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            
+              <div class="caption-container">
+              </div>
+            
+              <div class="row">
+                <div class="column">
+                  <img class="img_small1 cursor" src="images/fusion1.jpg" onclick="currentSlide(1)" alt="Ossobuco in Gremolata & Gnocchi de Plátano Macho">
+                </div>
+                <div class="column">
+                  <img class="img_small2 cursor" src="images/fusion2.jpg" onclick="currentSlide(2)" alt="Risotto Criollo">
+                </div>
+                <div class="column">
+                  <img class="img_small3 cursor" src="images/fusion3.jpg" onclick="currentSlide(3)" alt="Crostata de Pollo">
+                </div>
+                <div class="column">
+                  <img class="img_small4 cursor" src="images/postre1.jpg" onclick="currentSlide(4)" alt="Tiramisu">
+                </div>
+                <div class="column">
+                  <img class="img_small5 cursor" src="images/postre2.jpg" onclick="currentSlide(5)" alt="Bartolomeo Cheesecake">
+                </div>    
+                <div class="column">
+                  <img class="img_small6 cursor" src="images/postre3.jpg" onclick="currentSlide(6)" alt="Tarta de Queso Criolla">
+                </div>
+              </div>
+            </div>
+            </section>
+    </section>
+
+
+    <section class="col-12 col-t-12 pagina color_par altura_movil" id="registro-de-usuarios">
+        <h2 class="col-12 col-t-12 titulo_registro">REGISTRO DE USUARIOS</h2>
+        <article class="col-4 color_impar form-box">
+            <form>
+                <label class="input_registro" for="dni">DNI:</label>
+                <input class="input_registro" type="text" id="dni" name="dni" placeholder="12345678Z">
+                <label class="input_registro" for="nombre">Nombre y Apellido(s):</label>
+                <input class="input_registro" type="text" id="nombre" name="nombre" placeholder="Pepito Pérez">
+                <label class="input_registro" for="telefono">Telefono:</label>
+                <input class="input_registro" type="text" id="telefono" name="telefono" placeholder="123-45-67-89">
+                <label class="input_registro" for="correo">Correo electrónico:</label>
+                <input class="input_registro" type="text" id="correo" name="correo" placeholder="example@gmail.com">
+                <div id="cuadro_botones_registro">
+                  <input type="button" class="boton" id="enviar_registro" value="Enviar">
+                  <input class="boton" type="reset" value="Limpiar">
+                </div>
+              </form> 
+        </article>
+    </section>
+
+
+    <section class="col-12 col-t-12 pagina color_impar altura_movil" id="informacion-de-contacto">
+      <h2 class="col-12 col-t-12">INFORMACIÓN DE CONTACTO</h2>
+      <article class="color_par" id="caja_contacto">
+        <div class="inf_contacto">
+          <img src = "images/logo_ig.png" class = "img_contacto" alt="logo_ig">
+          <h4 class="texto_contacto">@bartolomeokitchen</h4>
+        </div>
+        <div class="inf_contacto">
+          <img src = "images/logo_gm.jpg" class = "img_contacto" alt="logo_gm">
+          <h4 class="texto_contacto">Calle del Gral. Pardiñas, 36, Madrid, 28001</h4>
+        </div>
+        <div class="inf_contacto">
+          <img src = "images/logo_fb.png" class = "img_contacto" alt="logo_fb">
+          <h4 class="texto_contacto">@bartolomeokitchen</h4>
+        </div>
+        <div class="inf_contacto">
+          <img src = "images/logo_telefono.png" class = "img_contacto" alt="logo_gm">
+          <h4 class="texto_contacto">+34 912 19 09 52</h4>
+        </div>
+      </article>
+      <article class="color_par" id="caja_mensaje">
+        <form>
+            <label>Escríbenos un mensaje:</label><br><br>
+            <textarea class="caja-informacion" rows="20" cols="42" name="mensaje" placeholder="Describa aquí su duda/problema/petición."></textarea><br><br>
+            <button class="boton">Enviar</button>
+            <input class="boton" type="reset" value="Limpiar">
+          </form> 
+      </article>
+    </section>
+
+    <section class="col-12 col-t-12 " id = "ultimo_section"> 
+        <h2 class="no_mostrar">vacio</h2>
+    </section>
+
+    <footer class="col-12 col-t-12">
+        <a href="https://www.instagram.com/bartolomeokitchen/" target="_blank">
+            <img src = "images/logo_ig.png" class = "img_footer" alt="logo_ig">
+        </a>
+        <a href="https://m.facebook.com/profile.php?id=100063815492561" target="_blank">
+            <img src = "images/logo_fb.png" class = "img_footer" alt="logo_fb">
+        </a>
+        <a href="https://maps.app.goo.gl/PghUaU7JyjMt8CQPA" target="_blank">
+            <img src = "images/logo_gm.jpg" class = "img_footer" alt="logo_gm">
+        </a>
+        <h4>+34 912 19 09 52</h4>
+    </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src = "script/script.js"></script>
+</body>
+</html>

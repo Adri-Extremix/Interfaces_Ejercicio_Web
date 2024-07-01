@@ -1,0 +1,453 @@
+
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+nav {
+  display: none;
+  height: 90%;
+  background-color :#333;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  width: 91%;
+  background-color:  #dda845;
+  margin-bottom: 3%;
+  margin-right: 1%;
+}
+
+.dropdown-content {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  background-color: #333;
+  margin-bottom: 6%;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color:  #dda845;
+}
+
+/* Formato para móviles, todo ocupará todo el ancho de la pantalla */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /*Formato para tablets*/
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* Formato para escritorio*/
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    nav {display: block;}
+    header {height: 90%;}
+    .dropdown {display: none;}
+    }
+
+    /* La cabecerá tendrá un fondo negro y un borde naranja */
+header {
+    background-color :#333;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 3%;
+    border-style: solid;
+    border-width: thick;
+    border-color: rgb(204, 126, 0);
+    font-family: 'Palatino',serif;
+  }
+  /*El logo tendrá un ancho del 60% del tamaño de la cabecera*/
+#logo {
+    width: 66%;
+
+}
+nav {
+    height: 90%;
+    background-color :#333;
+}
+    /*Cada botón de navegación tiene un tamaño del 33,33% para que 
+    entren 3 verticalmente y un ancho del 50% para que entren 2 horizontalmente
+    para su posición vamos colocando cada botón a la derecha, si no entra se colocará debajo */
+.naveg {
+    float: right;
+    font-size: 2.75vw;
+    height: 33.333%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30vh;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 6%;
+    background-color: rgb(204, 126, 0);
+    color:#333;
+    transition: background-color 0.5s;
+    font-family: Georgia;
+    width: 50%;
+}
+
+.naveg:hover {
+    background-color: rgb(196, 155, 88) 
+}
+
+video{
+    margin-top: 5%;
+    margin-right: 1%;
+    width: 91%;
+}
+
+    /*Cada nueva página limpiará los floats anteriores*/
+.pagina{
+    clear: both;
+    height: 90%;
+    background-color: rgb(204, 126, 0);
+    color: #333;
+    overflow: hidden;
+}
+
+.color_impar {
+    background-color: rgb(204, 126, 0);
+    color: #333;
+}
+
+.color_par {
+    background-color: #333;
+    color:rgb(204, 126, 0);
+}
+    /*Aquí daremos formato a los distintos tipos de texto*/
+h2 {
+    font-family: Georgia;
+    color:beige;
+    vertical-align: middle;
+    height: 10%;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 0.5%;
+    margin-top: 1%;
+}
+
+h3 {
+    font-family: Georgia;
+    font-style: italic;
+    color:beige;
+}
+
+h4 {
+    margin-right: 2%;
+    font-size: 3vw;
+    color: rgb(255, 171, 14);
+}
+
+p {
+    font-family: Georgia;
+    padding-bottom: 1%; 
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+    /*Usaremos los artículos para encajar el texto de cada página,
+    usaremos los paddings para centrar el texto, tanto verticalmente
+    como horizontalmente*/
+article{
+    padding-top: 3.5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 1.2rem;
+    text-align: justify;
+    transition: transform 1s;
+  }
+  article h3{
+    transform: translateY(500%);
+    transition: transform 1s;
+  }
+  article.active h3{
+    transform: translateY(0);
+  }
+  article p{
+    transform: translateY(500%);
+    transition: transform 1s;
+  }
+  article.active p{
+    transform: translateY(0);
+  }
+    /*Esta clase es usada para dar formato a las imágenes del footer*/
+.img_footer {
+    margin: 0.5%;
+    height: 80%;
+    float:left;
+}
+
+.form-box {
+    padding-top: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 5%;
+    margin-left: 30%;
+    width: 40%;
+    height: auto;
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+.titulo_registro{
+    margin-top: 4%;
+}
+
+.boton{
+    font-family: Georgia;
+    background-color: #333;
+    padding: 2%;
+    color: beige;
+    margin: 1%;
+    float: left;
+}
+
+#cuadro_botones_registro{
+  margin-top: 5%;
+  width: 100%;
+  padding-left: 35%;
+  float: left;
+}
+
+.input_registro {
+  margin:1%;
+  clear: both;
+  float: left;
+}
+
+.caja-informacion{
+  resize: none;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+    position: relative;
+    margin-top: 8%;
+  }
+  
+/* Hide the images by default */
+.mySlides {
+  padding-left: 20%;
+  display: none;
+}
+
+.imagen_galeria {
+  width: 75%;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  padding: 1%;
+}
+
+/* Container for image text */
+.caption-container {
+  font-family: Georgia;
+  text-align: center;
+  color: beige;
+  padding: 1%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+[class*="img_small"] {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.active,
+[class*="img_small"]:hover {
+  opacity: 1;
+}
+
+#caja_mensaje {
+  float:right;
+  margin-right: 3%;
+  padding-bottom: 2%;
+  height: 80%;
+  width: 35%;
+  margin-top:1%;
+  margin-bottom:4%;
+}
+
+#caja_contacto {
+  float:left;
+  width:57%;
+  margin-left: 3%;
+  height:80%;
+  margin-top:1%;
+  margin-bottom:3%;
+  padding-bottom: 3%;
+}
+
+.inf_contacto { 
+  width: 100%;
+  float: left;
+  margin-left: 1%;
+  margin-top: 2%;
+  padding:1%;
+}
+
+.img_contacto {
+  width: 10%;
+  float: left;
+}
+
+.texto_contacto {
+  float: right;
+  width: 80%;
+  font-size: 4vh;
+}
+
+
+    /*El footer se coloca en pantalla siempre, por encima del resto de la
+    pantalla, en la parte inferior, ocupando todo el ancho y un 10% de la altura*/
+footer {
+    position: fixed;
+    height: 10%;
+    bottom: 0%;
+    right: 0%;
+    background-color:#333;
+    text-align: right;
+    line-height: 10vh;
+    vertical-align: middle;
+    border-top: rgb(204, 126, 0);
+    border-top-width:medium;
+    border-top-style:groove;
+    color:#DDD
+
+}
+    /*Esta clase se usa en una última sección vacía que ocupa exactamente
+    lo que ocupa el footer. De esta manera el footer no ocupará una parte
+    de la última página*/
+#ultimo_section{
+    height:10%;
+}
+    /*Esta clase nos permite evitar los errores del validator que obligan a
+    que las sections tengan obligatoriamente un título, de esta manera ponemos
+    el título pero no lo mostramos*/
+.no_mostrar{
+    display: none;
+}
+
+    /* Al colocar el formato móvil hay demasiado contenido para la altura
+    de la sección, por lo tanto fijamos una altura automática para que se 
+    ajuste al texto*/
+@media only screen and (max-width: 768px) {
+    /* For desktop: */
+    .altura_movil {height:auto;}
+    .form-box {
+      margin-left: 15%;
+      width: 70%;
+    }
+    #caja_mensaje {
+      float:left;
+      margin-left: 5%;
+      width: 90%;
+      height: auto;
+    }
+    #caja_contacto {
+      float:left;
+      margin-left: 5%;
+      width: 90%;
+      height: auto;
+    }
+  }
